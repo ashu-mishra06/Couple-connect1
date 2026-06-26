@@ -1,42 +1,22 @@
-# CoupleConnect
+# CoupleConnect Retro UI
 
-Firebase-connected couple web app built with React + Vite.
+React + Vite + Firebase app with a retro brutalist dashboard UI inspired by the reference image.
 
 ## Features
 
 - Email/password signup and login
-- Create or join a Couple ID
+- Couple ID create/join flow
 - Shared couple password
 - Profile A / Profile B
-- Home section with latest partner status
+- Home section with partner status
 - Quick camera snip and photo upload
-- Realtime snap feed using Firestore base64 images
-- Map section with consent-based location sharing
-- Settings section
-- Private chat inside settings
-- Netlify deploy ready
-- Firebase Hosting ready
+- Realtime snap feed using Firestore base64
+- Consent-based location map
+- Settings and private chat
+- Responsive desktop, tablet, and mobile layout
+- Netlify-ready
 
-## Important
-
-Firebase Storage is not used because it may require a paid plan. Snaps are compressed and stored in Firestore for prototype/demo use.
-
-## Correct file structure
-
-```text
-package.json
-index.html
-netlify.toml
-firebase.json
-firestore.rules
-src/
-  main.jsx
-  App.jsx
-  firebase.js
-  styles.css
-```
-
-## Netlify deployment settings
+## Netlify settings
 
 ```text
 Build command: npm run build
@@ -49,19 +29,3 @@ Publish directory: dist
 npm install
 npm run dev
 ```
-
-## Firebase Hosting deployment
-
-```bash
-npm install
-npm run build
-firebase login
-firebase use coupleconnect-a6c1d
-firebase deploy
-```
-
-## Firebase services needed
-
-- Authentication: Email/Password enabled
-- Firestore Database enabled
-- Firestore rules published
